@@ -17,7 +17,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 const corsOptions = {
-    origin: 'http://resonant-tiramisu-2552d8.netlify.app',
+    origin: 'https://resonant-tiramisu-2552d8.netlify.app/',
+    
+    
     credentials: true
 }
 
