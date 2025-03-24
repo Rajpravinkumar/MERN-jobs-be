@@ -17,12 +17,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 const corsOptions = {
-    origin: 'https://resonant-tiramisu-2552d8.netlify.app/',
-    
-    
+    origin: 'https://resonant-tiramisu-2552d8.netlify.app',
     credentials: true
 }
-
+// https://resonant-tiramisu-2552d8.netlify.app/login
 app.use(cors(corsOptions));
 
 const PORT = process.env.PORT || 3000;
